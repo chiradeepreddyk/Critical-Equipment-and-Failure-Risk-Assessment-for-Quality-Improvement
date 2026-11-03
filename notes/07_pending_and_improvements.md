@@ -18,14 +18,18 @@
 
 ## Done on 3 Nov 2026 (second pass)
 - I-chart of plasma signal mean for set C (86 welds, limits from sound welds): flags 19/22 overpenetrations with no false alarms; misses 34/55 lack-of-connection welds, mostly 200 µm gaps. Section 5.11; `outputs/fig_control_chart.png`.
-- Control plan table linked to the PFMEA critical rows (Section 5.11).
 - Photodiode trace chart: one weld of each outcome (Section 5.5); `outputs/fig_photodiode_traces.png`.
 - Cross-validation comparison: random vs grouped folds (Section 5.6).
 - Script: `analysis/extra_charts.py`.
 
+## Done on 3 Nov 2026 (third pass)
+- Control plan is now its own Section 5.12. It is a full control plan with 12 rows grouped by process (Sealing, Welding), product vs process type, spec, method, frequency, control method, reaction plan, and the PFMEA risk with its RPN.
+- Sensor-signals graph (median and interquartile range of all 6 photodiode features by outcome) replaces the median table in Section 5.5; `outputs/fig_sensor_signals.png`.
+- Removed repeats: the signal median table, the control-chart outcome table (counts are in the chart subtitle), and the duplicate "paper reported 97%" bullet (now marked on the cross-validation chart).
+- Limitations renumbered to 5.13.
+
 ## More graph ideas (not yet added)
 - Feature importance bar chart (plasma and temperature means rank highest).
-- Box plots of plasma mean by outcome and foil.
 - Penetration depth vs laser power for set C (measured DP values).
 - Before vs after RPN chart for the four critical risks.
 - Criticality heat map of the 7 stations × 4 factors.

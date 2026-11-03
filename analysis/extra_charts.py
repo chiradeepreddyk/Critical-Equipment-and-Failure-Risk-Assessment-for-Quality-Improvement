@@ -76,6 +76,20 @@ for sig_id, lab, power in picks:
 ax.set(xlabel="Time (ms)", ylabel="Plasma signal (V)", title="Plasma photodiode during one weld of each outcome")
 ax.legend(); plt.tight_layout(); plt.savefig(f"{out}/fig_photodiode_traces.png", dpi=150); plt.close()
 
+# 2b. Sensor signals by outcome: all six photodiode features (box plots)
+fig, axes = plt.subplots(2, 3, figsize=(11, 6))
+names = [("Mean SP [V]", "Plasma mean"), ("Mean ST [V]", "Temperature mean"), ("Mean SR [V]", "Back-reflection mean"),
+         ("St Dev SP [V]", "Plasma spread"), ("St Dev ST [V]", "Temperature spread"), ("St Dev SR [V]", "Back-reflection spread")]
+for ax, (feat, title) in zip(axes.flat, names):
+    data = [u.loc[u.Label == lab, feat] for lab in ["LoC", "SW", "OP"]]
+    bp = ax.boxplot(data, patch_artist=True, showfliers=False)
+    ax.set_xticks([1, 2, 3], ["LoC", "Sound", "OP"])
+    for patch, lab in zip(bp["boxes"], ["LoC", "SW", "OP"]):
+        patch.set_facecolor(COLORS[lab]); patch.set_alpha(.5)
+    ax.set_title(title); ax.set_ylabel("V")
+fig.suptitle("Photodiode features by weld outcome (142 welds)")
+plt.tight_layout(); plt.savefig(f"{out}/fig_sensor_signals.png", dpi=150); plt.close()
+
 # 3. Cross-validation: random vs grouped by setting
 FEATS = ["Mean SP [V]", "St Dev SP [V]", "Mean ST [V]", "St Dev ST [V]", "Mean SR [V]", "St Dev SR [V]"]
 u["grp"] = u["set"] + "_" + u["Laser Power [W]"].round().astype(int).astype(str) + "_" + u["gap_um"].astype(str)
