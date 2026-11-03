@@ -28,7 +28,8 @@ pip install pandas openpyxl scipy scikit-learn matplotlib libarchive-c
 python analysis/extract.py data/raw data/extracted            # unpack the RAR signal files
 python analysis/audit.py "data/raw/Statistic featuress.xlsx" data/extracted outputs/features_all.csv
 python analysis/feasibility.py outputs/features_all.csv outputs
-python analysis/report_analysis.py outputs/features_all.csv outputs   # all Chapter 5 numbers and figures
+python analysis/report_analysis.py outputs/features_all.csv outputs   # Chapter 5 numbers and figures
+python analysis/extra_charts.py outputs/features_unique.csv data/extracted outputs   # control chart, traces, cross-validation
 ```
 
 ## Dataset citation

@@ -1,0 +1,77 @@
+{
+ "control_chart": {
+  "CL": 1.163,
+  "UCL": 1.622,
+  "LCL": 0.703,
+  "MRbar_sound": 0.173,
+  "table": {
+   "above": {
+    "LoC": 0,
+    "OP": 19,
+    "SW": 0
+   },
+   "below": {
+    "LoC": 21,
+    "OP": 0,
+    "SW": 0
+   },
+   "inside": {
+    "LoC": 34,
+    "OP": 3,
+    "SW": 9
+   }
+  },
+  "missed_LoC_median_gap": 200.0
+ },
+ "importance": {
+  "Mean SP [V]": 0.217,
+  "St Dev SP [V]": 0.138,
+  "Mean ST [V]": 0.211,
+  "St Dev ST [V]": 0.131,
+  "Mean SR [V]": 0.104,
+  "St Dev SR [V]": 0.167,
+  "foil flag": 0.033
+ },
+ "cv": [
+  {
+   "method": "Random folds",
+   "metric": "Overall accuracy",
+   "v": 87.3
+  },
+  {
+   "method": "Random folds",
+   "metric": "Lack of connection caught",
+   "v": 95.9
+  },
+  {
+   "method": "Random folds",
+   "metric": "Overpenetration caught",
+   "v": 87.5
+  },
+  {
+   "method": "Random folds",
+   "metric": "Sound welds passed",
+   "v": 65.5
+  },
+  {
+   "method": "Grouped by setting",
+   "metric": "Overall accuracy",
+   "v": 75.4
+  },
+  {
+   "method": "Grouped by setting",
+   "metric": "Lack of connection caught",
+   "v": 89.0
+  },
+  {
+   "method": "Grouped by setting",
+   "metric": "Overpenetration caught",
+   "v": 82.5
+  },
+  {
+   "method": "Grouped by setting",
+   "metric": "Sound welds passed",
+   "v": 31.0
+  }
+ ]
+}
