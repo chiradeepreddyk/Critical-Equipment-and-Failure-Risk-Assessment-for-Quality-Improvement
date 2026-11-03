@@ -52,3 +52,13 @@
 - Deming (1986), *Out of the Crisis*.
 - Juran & Godfrey (1999), *Juran's Quality Handbook*.
 - Ishikawa (1985), *What Is Total Quality Control?*
+
+## Search for more welding data (3 Nov 2026, second pass)
+| Dataset | Process | Size | Access | Verdict |
+|---|---|---|---|---|
+| ARTS-Lab, GitHub `ARTS-Laboratory/Dataset-battery-tab-laser-welding` | Battery tab laser welding (thermal camera, event camera, microscope) | About 10 welds (Dataset-1) and about 16 (Dataset-2); very little documentation; no label table found | Open, CC BY-SA 4.0 | Too small to add volume. Usable only as a supporting example of in-situ thermal monitoring |
+| Intel Robotic Welding Multimodal (Hugging Face) | Robotic arc welding (audio and video) | More than 4,000 samples, 12 categories | Gated: contact details required; Intel research-use licence | Large, but not battery-related |
+| IEEE DataPort, resistance spot welding of car bodies | Spot welding (current, voltage, force, resistance) | 724 MB CSV | IEEE subscription | Not battery-related; paywalled |
+| Ultrasonic tab welding | — | — | No open dataset found | — |
+
+**Conclusion:** no larger open battery-joining dataset exists. Zenodo 6732794 stays the core dataset.
