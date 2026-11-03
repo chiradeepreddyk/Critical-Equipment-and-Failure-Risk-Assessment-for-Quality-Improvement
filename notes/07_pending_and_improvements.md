@@ -11,10 +11,10 @@
 - [ ] Final read-through for wording and consistency.
 
 ## Improvements (optional, in order of value)
-2. **Action Priority column:** add AIAG-VDA Action Priority (H/M/L) next to RPN in the PFMEA.
-3. **Sensitivity check:** change each S, O and D by ±1 and show the top-4 ranking stays the same. Answers "aren't your scores arbitrary?"
-4. **Cost of poor quality box:** the Bolt recall (about $1.8 B, about 142,000 vehicles) as a short example in Chapter 1.
-6. **Viva preparation:** one page of likely questions (Why 142 welds? Why PFMEA, not DFMEA? Why is your accuracy lower than the paper's?).
+1. **Action Priority column:** add AIAG-VDA Action Priority (H/M/L) next to RPN in the PFMEA.
+2. **Sensitivity check:** change each S, O and D by ±1 and show the top-4 ranking stays the same. Answers "aren't your scores arbitrary?"
+3. **Cost of poor quality box:** the Bolt recall (about $1.8 B, about 142,000 vehicles) as a short example in Chapter 1.
+4. **Viva preparation:** one page of likely questions (Why 142 welds? Why PFMEA, not DFMEA? Why is your accuracy lower than the paper's?).
 
 ## Done on 3 Nov 2026 (second pass)
 - I-chart of plasma signal mean for set C (86 welds, limits from sound welds): flags 19/22 overpenetrations with no false alarms; misses 34/55 lack-of-connection welds, mostly 200 µm gaps. Section 5.11; `outputs/fig_control_chart.png`.
