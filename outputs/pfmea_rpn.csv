@@ -1,0 +1,10 @@
+process,mode,S,O,D,RPN
+Sealing,Void at tab seal,9,6,6,324
+Sealing,Contaminated seal area,9,5,7,315
+Welding,LoC - excess gap,8,6,5,240
+Welding,Spatter / porosity,7,5,6,210
+Welding,Burn-through,9,4,5,180
+Sealing,Weak seal,9,5,4,180
+Sealing,Over-seal / thinning,7,4,6,168
+Welding,LoC - low power,8,5,4,160
+Sealing,Wrinkle / misalignment,6,4,4,96

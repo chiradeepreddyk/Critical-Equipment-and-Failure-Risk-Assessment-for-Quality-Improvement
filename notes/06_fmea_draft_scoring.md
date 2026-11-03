@@ -1,4 +1,4 @@
-# Draft PFMEA scoring (for team review)
+# PFMEA scoring
 
 ## Scales used
 **Process FMEA (PFMEA)** scales from the AIAG FMEA Manual, 4th edition. Welding and sealing are process steps, so PFMEA applies rather than design FMEA (DFMEA).
@@ -17,18 +17,18 @@
 | **Low** | RPN < 100. Monitor |
 | **Safety flag** | Any S ≥ 9, regardless of RPN. Treated as a special characteristic |
 
-## Draft scores
-| ID | Process | Failure mode | Cause (equipment link) | S | O | D | RPN | Class |
-|---|---|---|---|---|---|---|---|---|
-| S2 | Sealing | Void or channel at the tab seal | Metal tab pulls heat away; tab sealant film misplaced | 9 | 6 | 6 | **324** | Critical, safety |
-| S3 | Sealing | Contaminated seal area | Electrolyte or debris on the seal zone | 9 | 5 | 7 | **315** | Critical, safety |
-| W1 | Welding | Lack of connection | Excess gap from a worn or misaligned clamp | 8 | 6 | 5 | **240** | Critical |
-| W4 | Welding | Spatter or porosity | Surface contamination or oxide on the tab | 7 | 5 | 6 | **210** | Critical |
-| W3 | Welding | Overpenetration (burn-through) | Excess power or wrong recipe for the foil | 9 | 4 | 5 | 180 | Significant, safety |
-| S1 | Sealing | Weak seal (interfacial failure) | Low temperature or dwell from heater drift | 9 | 5 | 4 | 180 | Significant, safety |
-| S4 | Sealing | Over-seal or thinning | Excess temperature or pressure | 7 | 4 | 6 | 168 | Significant |
-| W2 | Welding | Lack of connection | Low effective power from a dirty window or ageing laser source | 8 | 5 | 4 | 160 | Significant |
-| S5 | Sealing | Wrinkle or misalignment | Sealing jaws misaligned | 6 | 4 | 4 | 96 | Low |
+## Scores (approved by the team, grouped by process)
+| Process | Failure mode | Cause (equipment link) | S | O | D | RPN | Class |
+|---|---|---|---|---|---|---|---|
+| **Sealing** | Void or channel at the tab seal | Metal tab pulls heat away; tab sealant film misplaced | 9 | 6 | 6 | **324** | Critical, safety |
+|  | Contaminated seal area | Electrolyte or debris on the seal zone | 9 | 5 | 7 | **315** | Critical, safety |
+|  | Weak seal (interfacial failure) | Low temperature or dwell from heater drift | 9 | 5 | 4 | 180 | Significant, safety |
+|  | Over-seal or thinning | Excess temperature or pressure | 7 | 4 | 6 | 168 | Significant |
+|  | Wrinkle or misalignment | Sealing jaws misaligned | 6 | 4 | 4 | 96 | Low |
+| **Welding** | Lack of connection | Excess gap from a worn or misaligned clamp | 8 | 6 | 5 | **240** | Critical |
+|  | Spatter or porosity | Surface contamination or oxide on the tab | 7 | 5 | 6 | **210** | Critical |
+|  | Overpenetration (burn-through) | Excess power or wrong recipe for the foil | 9 | 4 | 5 | 180 | Significant, safety |
+|  | Lack of connection | Low effective power from a dirty window or ageing laser source | 8 | 5 | 4 | 160 | Significant |
 
 ## Reasoning
 ### Severity

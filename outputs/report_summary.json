@@ -1,0 +1,111 @@
+{
+  "counts": {
+    "LoC": 73,
+    "OP": 40,
+    "SW": 29
+  },
+  "counts_by_set": {
+    "LoC": {
+      "A": 12,
+      "B": 6,
+      "C": 55
+    },
+    "OP": {
+      "A": 18,
+      "B": 0,
+      "C": 22
+    },
+    "SW": {
+      "A": 16,
+      "B": 4,
+      "C": 9
+    }
+  },
+  "window": {
+    "200 um Ni-plated Cu": {
+      "power_min": 540.0,
+      "power_max": 690.0,
+      "gap_max": 144.0,
+      "n_settings": 44
+    },
+    "300 um Cu": {
+      "power_min": 900.0,
+      "power_max": 1050.0,
+      "gap_max": 100.0,
+      "n_settings": 12
+    }
+  },
+  "min_gap_all_fail_300um": 1.0,
+  "signals": [
+    {
+      "feature": "Mean SP [V]",
+      "LoC": 0.83,
+      "OP": 2.44,
+      "SW": 1.49,
+      "p_SW_vs_LoC": 1.6088344657748813e-10,
+      "p_SW_vs_OP": 0.0002591312771112896
+    },
+    {
+      "feature": "St Dev SP [V]",
+      "LoC": 0.26,
+      "OP": 1.25,
+      "SW": 0.6,
+      "p_SW_vs_LoC": 2.733280595168504e-07,
+      "p_SW_vs_OP": 0.003459362261547796
+    },
+    {
+      "feature": "Mean ST [V]",
+      "LoC": 0.67,
+      "OP": 2.21,
+      "SW": 1.27,
+      "p_SW_vs_LoC": 1.6276904507623298e-09,
+      "p_SW_vs_OP": 7.985958605553048e-05
+    },
+    {
+      "feature": "St Dev ST [V]",
+      "LoC": 0.2,
+      "OP": 1.06,
+      "SW": 0.66,
+      "p_SW_vs_LoC": 9.230050911502994e-08,
+      "p_SW_vs_OP": 0.00295585421072639
+    },
+    {
+      "feature": "Mean SR [V]",
+      "LoC": 2.69,
+      "OP": 2.77,
+      "SW": 2.64,
+      "p_SW_vs_LoC": 0.5578382854571953,
+      "p_SW_vs_OP": 0.23591078445805858
+    },
+    {
+      "feature": "St Dev SR [V]",
+      "LoC": 0.72,
+      "OP": 0.92,
+      "SW": 0.99,
+      "p_SW_vs_LoC": 8.503686235717704e-08,
+      "p_SW_vs_OP": 0.49217810142033547
+    }
+  ],
+  "detection": {
+    "accuracy": 0.754,
+    "confusion": {
+      "LoC": {
+        "LoC": 65,
+        "OP": 1,
+        "SW": 7
+      },
+      "OP": {
+        "LoC": 0,
+        "OP": 33,
+        "SW": 7
+      },
+      "SW": {
+        "LoC": 9,
+        "OP": 11,
+        "SW": 9
+      }
+    },
+    "defect_catch_rate": 0.876,
+    "sound_rejected_rate": 0.69
+  }
+}

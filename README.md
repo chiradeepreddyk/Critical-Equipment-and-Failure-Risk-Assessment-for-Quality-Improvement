@@ -9,9 +9,10 @@ TQM course project. The case study is lithium-ion battery joining: **laser tab w
 - [x] Feasibility check: process window and a leakage-safe classifier (`analysis/feasibility.py`)
 - [x] FMEA evidence collected for team scoring (`notes/04_fmea_evidence.md`)
 - [x] Project risks and mitigations listed (`notes/05_risk_register.md`)
-- [ ] Team S/O/D scoring
-- [ ] Full analysis and figures
-- [ ] Report draft
+- [x] Team S/O/D scoring (approved 3 Nov 2026)
+- [x] Full analysis and figures (`analysis/report_analysis.py`)
+- [x] Report draft (Claude Doc, see notes/07)
+- [ ] Final review and Word/PDF export
 
 ## Repository layout
 | Path | Contents |
@@ -27,6 +28,7 @@ pip install pandas openpyxl scipy scikit-learn matplotlib libarchive-c
 python analysis/extract.py data/raw data/extracted            # unpack the RAR signal files
 python analysis/audit.py "data/raw/Statistic featuress.xlsx" data/extracted outputs/features_all.csv
 python analysis/feasibility.py outputs/features_all.csv outputs
+python analysis/report_analysis.py outputs/features_all.csv outputs   # all Chapter 5 numbers and figures
 ```
 
 ## Dataset citation
